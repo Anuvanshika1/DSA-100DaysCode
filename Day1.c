@@ -15,15 +15,13 @@ int main() {
     printf("Enter the element to insert: ");
     scanf("%d", &x);
 
-    printf("Enter the position (1-based): ");
+    printf("Enter the position: ");
     scanf("%d", &pos);
-
-    // Shift elements to the right
+    // shifting the array to the right
     for (i = n; i >= pos; i--) {
         arr[i] = arr[i - 1];
     }
 
-    // Insert the element
     arr[pos - 1] = x;
     n++; // increase size
 
